@@ -53,3 +53,27 @@ body {
     /* -40px subiu auto é baixo e 40px é a lateral */
     max-width: 900px; margin: -40px auto 40px; padding: 20px;
 }
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.data {
+    display: flex;
+    gap: 20px;
+}
+.card {
+    flex: 1; background-color: #eef5ff;
+    padding: 15px; border-left: 5px solid #2a5298;
+    border-radius: 8px;
+}
+.horas p{
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #89FAB7;
+    border-radius: 10px;
+    color: #0C7035;
+    font-weight: bolder;
+}
