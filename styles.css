@@ -106,7 +106,7 @@ th {
     color: white;
 }
 tr:hover {
-    background-color: #e9f7ef;
+    background-color: #ddedf7;
 }
 .box-amarela {
     width: 25px; height: 25px;
@@ -201,4 +201,39 @@ tr:hover {
     align-items: center;
     flex-direction: column;
     color: white;
+}
+.evento {
+    margin-bottom: 25px;
+    position: relative; /* move o elemento HTML sem alterar elemento ao lado */
+
+}
+.evento::before{ /* cria elemento fanatasma-aparece como primeiro elemento */
+    content: ''; /* modo arquiteto */
+    width: 12px;
+    height: 12px;
+    background: #ff4b2b;
+    border-radius: 50%;
+    position: absolute; /* posição atual do elemento */
+    left: -28px;
+    top: 5px;
+}
+.timeline {
+    border-left: 3px solid #2a5298;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.grid-locais {
+    display: flex; /* fica um do lado do outro-preenche a largura */
+    gap: 20px;
+}
+.unidade {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+.unidade h4{
+    color: #2a5298;
+    margin-top: 0;
 }
