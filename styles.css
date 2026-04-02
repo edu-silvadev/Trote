@@ -151,7 +151,7 @@ th {
 }
 /* aula 23-03 */
 .kit-container {
-     background-color: #fff8e1;
+    background-color: #fff8e1;
     border: 2px dashed #ffc107;
     padding: 20px;
     border-radius: 10px;
@@ -175,7 +175,7 @@ th {
 }
 
 /* Destaque para as Provas de Menção Honrosa */
-.memorias-facef, .acao-social, .album-figurinhas {
+.memorias-facef, .acao-social, .album-figurinhas, .medalhas {
     border-left: 5px solid #ffd700; /* Cor dourada para medalhas */
     background-color: #fffdf0;
 }
@@ -292,25 +292,6 @@ footer p {
 .col li {
   margin-bottom: 10px;
   color: #555;
-}
-.medalhas {
-  background: #e9e6db;
-  padding: 25px;
-  border-radius: 15px;
-  position: relative;
-  margin-top: 20px;
-}
-
-/* Linha amarela lateral */
-.medalhas::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  bottom: 10px;
-  width: 5px;
-  background: #f1c40f;
-  border-radius: 5px;
 }
 
 .medalhas h2 {
@@ -490,4 +471,11 @@ button {
     border-left: 5px solid #1e3c72;
     font-weight: bold;
     font-size: 1.2rem;
+}
+.item {
+    background: #eef5ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #1e3c72;
 }

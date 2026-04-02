@@ -4,6 +4,7 @@
         <title> Trote Solidário </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <nav class="menu"> <!-- Menu de navegação -->
@@ -22,23 +23,53 @@
             </div>
         </nav>
         <main class="principal">
-           <section class="calculadora">
-                <h3>Simulador de pontos</h3>
+            <section>
+                <h3> Simulador de Metas Batidas </h3>
+                <div class="form-grupo">
+                    <label> Kit de Alimentação (60 kits) </label>
+                    <input type="number" id="kitAlimentação" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label> Suplementos(30 latas) </label>
+                    <input type="number" id="qtdeSuplementos" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label> Leite (60 caixas)</label>
+                    <input type="number" id="qtdeLeite" min="0">
+                </div>
+                <div class="form-grupo">
+                    <label> Doações de Sangue (30 doações)</label>
+                    <input type="number" id="qtdeDoacoes" min="0">
+                </div>
+            </section>
+            <section>
+                <h3>🧮Simulador de Pontos - Itens Avulsos</h3>
                 <div class="form-grid">
                     <div class="form-grupo">
                         <label> Arroz(5Kg) - 10 pts</label> <!--rótulo da caixa de entrada-->
                         <input type="number" id="qtdeArroz" min="0"> <!--caixa de entrada-->
                     </div>
-                     <div class="form-grupo">
+                    <div class="form-grupo">
                         <label> Feijão(2Kg) - 8 pts</label>
                         <input type="number" id="qtdeFeijao" min="0">
+                    </div>
+                    <div class="form-grupo">
+                        <label> Óleo(900ml) - 4 pts</label>
+                        <input type="number" id="qtdeOleo" min="0">
+                    </div>
+                    <div class="form-grupo">
+                        <label> Macarrão(500g) - 2 pts</label>
+                        <input type="number" id="qtdeMacarrao" min="0">
+                    </div>
                 </div>
+            </section>
+            <section>
                 <!-- quando este botão for clicado, a função calcular() será chamado no Javascript -->
                 <button onclick="calcular()"> Calcular Total da equipe</button>
                 <div id="resultado" class="resultado-box">
                     Pontuação total: 0 pontos
                 </div>
-           </section>
+            </section>
         </main>
         <footer>
             <div class="rodape">
@@ -46,18 +77,5 @@
             <p> Uni-Facef-centro Universitário Municipal de franca</p>
             </div>
         </footer>
-        <script> <!--programar Javascript-->
-            function calcular() {
-                //nJS é uma linguagem não tipada (sem tipo de dados) 
-                // Number() é uma função que convert texto em número
-                // reacupera o valor informado no elemento com id qtdeArroz
-                let qtdeArroz = Number(document.getElementById("qtdeArroz").value)
-                let qtdeFeijao = Number(document.getElementById("qtdeFeijao").value)
-                // calcular o valor total de pontos 
-                let pontos = (qtdeArroz * 10) + (qtdeFeijao * 8)
-                //vamos exibir o resultado para o usuário
-                document.getElementById("resultado").innerText = "Pontuação total: " + pontos + " pontos"
-            }
-        </script>
     </body>
 </html>
