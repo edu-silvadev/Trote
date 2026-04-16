@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title> Exercícios de JavaScript </title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"> </script>
+    </head>
+    <body>
+        <section>
+            <h3> Calculadora de Churrasco </h3>
+            <div>
+                <label> Número de convidados </label>
+                <input type="number" id="convidados">
+            </div>
+            <button onclick="churras()"> Total em Kg </button>
+            <div id="resultadoCarne">
+                
+            </div>
+        </section>
+        <section>
+            <h3> Avaliador de temperatura </h3>
+            <div>
+                <label> Temperatura </label>
+                <input type="number" id="temperatura">
+            </div>
+            <button onclick="febre()"> Verificar temperatura</button>
+            <div id="resultadoFebre">
+
+            </div>
+        </section>
+        <section>
+            <h3> Avaliador de Empréstimo </h3>
+            <div>
+                <label> Renda </label>
+                <input type="number" id="renda">
+            </div>
+            <div>
+                <label> Idade </label>
+                <input type="number" id="idade">
+            </div>
+            <button onclick="emprestimo()"> Verificar Empréstimo</button>
+            <div id="resultadoEmprestimo">
+
+            </div>
+        </section>
+        <section>
+            <h3> Categoriza Lutas </h3>
+            <div>
+                <label> Idade </label>
+                <input type="number" id="idadeLuta">
+            </div>
+            <div>
+                <label> Peso </label>
+                <input type="number" id="peso">
+            </div>
+            <button onclick="luta()"> Verificar Categoria da Luta</button>
+            <div id="resultadoCategoria">
+
+            </div>
+        </section>
+    </body>
+</html>
